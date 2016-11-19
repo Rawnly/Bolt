@@ -312,12 +312,6 @@ if (process.platform === 'darwin') {
       click: function () {
         app.quit()
       }
-    }, {
-        label: 'Focus on main',
-        accelerator: 'CmdOrCtrl+O',
-        click: function () {
-          mainWindow.focus()
-        }
     }]
   })
 
