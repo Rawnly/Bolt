@@ -14,7 +14,7 @@ Enjoy!
 There are 2 ways
 
 1. Compile it yourself.
-2. Download latest release for your OS.
+2. Download [latest release](https://github.com/Rawnly/Bolt/releases/tag/) for your OS. ( Actually OSX only)
 
 ### Compiling
 Clone or download this repo and do the following.
@@ -25,12 +25,14 @@ Clone or download this repo and do the following.
   cd Bolt
   npm install
   npm start # to run preview
-  electron-packager . --appname Bolt --appversion 0.1.0 --appicon ./app/img/app-icon.icns --overwrite --out ~/Desktop --all  # "npm install electron-packager -g" if is not installed
+
+  # "npm install electron-packager -g" if is not installed
+  electron-packager . --appname Bolt --appversion 0.1.0 --appicon ./app/img/app-icon.icns --overwrite --out ~/Desktop --all  
 ```
 
 ## Other
-:star: **Electron** Framework <br>
-:star: **Atom**, an awsome text editor
+:star: [**@Electron**](https://github.com/electron) Framework <br>
+:star: [**Atom**](https://github.com/atom), an awsome text editor
 
 
 ### License [MIT](LICENSE.md)
