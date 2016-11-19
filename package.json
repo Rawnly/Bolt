@@ -1,5 +1,5 @@
 {
-  "name": "bolt",
+  "name": "Bolt",
   "version": "0.1.0",
   "description": "Calculate distance between you and the lightning who you seen",
   "main": "main.js",
@@ -9,10 +9,13 @@
     "jquery": "^3.1.1",
     "remote": "^0.2.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-packager": "^8.3.0"
+  },
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager ./ Bolt --all"
+    "package": "electron-packager . --appname Bolt --all --icon ./app/img/app-icon.icns  --overwrite"
   },
   "repository": {
     "type": "git",
