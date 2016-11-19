@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- / Meta tags -->
+
+    <title> Bolt </title>
+
+    <!-- jQuery -->
+    <!-- <script src="../scripts/jquery.min.js"></script> -->
+    <script>window.$ = window.jQuery = require('./scripts/jquery.min.js');</script>
+    <script src="scripts/under.js"></script>
+    <!-- <script src="scripts/geoloc.js"></script> -->
+
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/chili.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div class="titlebar"> </div>
+    <section id="sect1">
+      <h1 id="title" class="center"> Lightning Calculator </h1>
+
+      <div class="content">
+        <div class="center">
+          <!-- <label for="">Delay </label> -->
+          <br>
+          <input type="number" id="delay" placeholder="In Seconds">
+
+          <br>
+          <br>
+
+          <a href="#sect2">
+            <button type="button" id="bt" name="button">
+                Get
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sect2">
+      <div class="content mobile">
+        <h2 class="center"> Lightning fell to... </h2> <br>
+
+        <h3 class="center" id="si" > 0 <span class="unit">km</span> | 0 <smtpan class="unit">mt</span> </h3>
+        <!-- <h3 class="center" id="us" > 0 <span class="unit">mi</span> | 0 <span class="unit">ft</span> </h3> -->
+
+         <br> <h2 class="center"> ...from you </h2>
+      </div>
+    </section>
+    <script type="text/javascript">
+      require('../renderer.js')
+      require('electron-titlebar')
+    </script>
+  </body>
+</html>

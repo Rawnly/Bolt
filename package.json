@@ -1,0 +1,29 @@
+{
+  "name": "bolt",
+  "version": "0.1.0",
+  "description": "Calculate distance between you and the lightning who you seen",
+  "main": "main.js",
+  "dependencies": {
+    "electron-titlebar": "^0.0.3",
+    "electron-packager": "^8.3.0",
+    "jquery": "^3.1.1",
+    "remote": "^0.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager ./ Bolt --all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/Rawnly/Bolt.git"
+  },
+  "keywords": [
+    "bolt",
+    "lightning",
+    "electron",
+    "atom"
+  ],
+  "author": "Rawnly",
+  "license": "MIT"
+}

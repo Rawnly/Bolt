@@ -1,0 +1,19 @@
+.titlebar {
+  -webkit-app-region: drag;
+  background: #161A21;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+}
+
+.titlebar.no-color {
+  background: transparent;
+}
+
+section:first-of-type {
+    background-color: #fff;
+    background-size: cover;
+    color: #161A21;
+}

@@ -1,0 +1,19 @@
+#closeBtn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #161A21;
+  color: #fff;
+  margin-top: 50px;
+  border: 0;
+  transition: .3s all ease;
+  border: 3px solid transparent;
+  font-size: 2.5vmin;
+
+}
+#closeBtn:hover {
+  border-radius: 5px;
+  background: #fff;
+  border: 3px solid #161A21;
+  color: #161A21;
+}
