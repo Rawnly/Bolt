@@ -28,7 +28,7 @@ $(document).ready(function() {
                dataType: 'jsonp',
                success: function(data) {
                  temp = data.currently.temperature;
-                 console.log(temp);
+                 console.log(temp + ' Gradi Celsius');
                  return temp
                },
                type: 'GET'
@@ -47,10 +47,12 @@ $(document).ready(function() {
 });
 
 function getSoundSpeed(temperature) {
-    speed = Math.floor((331.45 + (0.62 * temperature)) * 10) / 10;
+    speed = Math.round( 331.45 + ( 0.62 * temperature ) );
     if ( speed > 0 && speed !== NaN ) {
+      console.log(speed);
       return speed;
     } else {
+      console.log(speed);
       return 0;
     }
 }

@@ -14,19 +14,25 @@
     <script src="scripts/instructions.js"></script>
 
 
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/about.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/chili.css" media="screen" title="no title">
   </head>
   <body>
-    <div class="titlebar"></div>
+    <div class="titlebar no-color"></div>
     <section>
-      <div class="content center">
-        Version <script type="text/javascript"> `${version}` </script>
+      <div id="about" class="content center">
+        Version <script type="text/javascript"> document.write( appVersion ) </script> <br>
+        Electron <script type="text/javascript"> document.write(process.versions.electron) </script> <br>
+        Made with <strong>love</strong> by <a href="http://github.com/Rawnly" class="animated dark">Rawnly</a>
 
       </div>
     </section>
+
+    <script type="text/javascript">
+      require('../renderer.js')
+    </script>
   </body>
 </html>
