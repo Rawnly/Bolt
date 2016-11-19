@@ -45,8 +45,8 @@ function createWelcome() {
 function CreateInstr() {
   // Create the browser window.
   instr = new BrowserWindow({
-    width: 800,
-    height: 1000,
+    width: 500,
+    height: 450,
     resizable: false,
     titleBarStyle: 'hidden-inset'
   })
