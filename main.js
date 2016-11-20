@@ -216,6 +216,10 @@ app.on('ready', function () {
   tray = new Tray(path.join( __dirname + '/app/img/Tray/tray-icon.png' ))
   tray.setToolTip('Bolt App')
   tray.setContextMenu(contextMenu)
+
+
+  app.dock.setMenu(contextMenu)
+  app.dock.setIcon( path.join(  __dirname + '/app/img/tray/tray-icon(@3x).png' ) )
 } )
 
 
