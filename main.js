@@ -206,18 +206,16 @@ function main (s) {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', function () {
-  app.dock.hide() // app.dock.show() to reverse
+  app.dock.hide()
 
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
   createWelcome()
 
 
-  tray = new Tray('./app/img/Tray/tray-icon.png')
+  tray = new Tray(path.join( __dirname + '/app/img/Tray/tray-icon.png' ))
   tray.setToolTip('Bolt App')
   tray.setContextMenu(contextMenu)
-  tray.setTitle('Bolt')
-
 } )
 
 
